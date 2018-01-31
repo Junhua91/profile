@@ -1,0 +1,11 @@
+@import com.junhua.profile.services.HomeModels.HomeViewModel
+
+@(vm:HomeViewModel)
+
+<body>
+    @for(data <- vm.homeView){
+        <p>@data.name</p>
+        <p>@data.age</p>
+        <p>@data.address</p>
+    }
+</body>
