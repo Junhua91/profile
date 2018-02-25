@@ -26,7 +26,10 @@ libraryDependencies ++= Seq(
   "org.springframework" % "spring-context" % springVersion,
   "org.springframework" % "spring-beans" % springVersion,
   "org.springframework" % "spring-context-support" % springVersion,
-  "org.springframework" % "spring-test" % springVersion % "test"
+  "org.springframework" % "spring-test" % springVersion % "test",
+  "redis.clients"       % "jedis"       %  "2.8.0",//connect to redis using java, redis java driver
+  "org.springframework.data" % "spring-data-redis" % "1.5.2.RELEASE"
+
 )
 
 unmanagedResourceDirectories in Test <+=  baseDirectory ( _ /"target/web/public/test" )  
